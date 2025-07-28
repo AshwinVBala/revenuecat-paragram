@@ -19,31 +19,35 @@ struct Paywall: View {
     var body: some View {
         
         VStack (alignment: .leading, spacing: 20) {
-            Text("Meditate Plus")
+            Text("Paragram Pro")
                 .bold()
                 .font(Font.largeTitle)
-            
-            Text("Unlock all guided meditations and deeper analytics.")
-            
+            Text("Unlock Premium Features")
             
             Spacer()
             
-            VStack (spacing: 40) {
+            VStack(spacing: 40) {
                 HStack {
-                    Image(systemName: "brain.head.profile")
-                    Text("Clear your head and improve your memory")
+                    Image(systemName: "checkmark")
+                    Text("Early access to new AI models")
                 }
                 
                 HStack {
-                    Image(systemName: "checkmark.icloud")
-                    Text("Download meditations for offline sessions")
+                    Image(systemName: "crown")
+                    Text("Crown badge on your profile")
                 }
                 
                 HStack {
-                    Image(systemName: "shareplay")
-                    Text("Destress and get better sleep")
+                    Image(systemName: "person.3")
+                    Text("Collaborate with other users")
+                }
+                
+                HStack {
+                    Image(systemName: "message")
+                    Text("Custom LLMs for coding, creative writing, and research.")
                 }
             }
+            
             Spacer()
             
             if currentOffering != nil {
@@ -83,7 +87,7 @@ struct Paywall: View {
             
             Spacer()
             
-            Text("Better sleep, less stress and a clear head is just around the corner.")
+            Text("Auto-renews for $14.99/month")
             
         }
         .padding(50)
